@@ -18,7 +18,7 @@
           <img src="<?php echo $menu->image ?>">
           <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
           <!-- <p>タグの中に、$menuのpriceプロパティを表示してください -->
-          <p class="price">¥”<?php echo $menu->price ?>”</p>
+          <p class="price">¥<?php echo $menu->price ?>ß</p>
         </div>
       <?php endforeach ?>
     </div>
