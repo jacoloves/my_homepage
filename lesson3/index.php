@@ -1,5 +1,4 @@
-<!-- ここでdata.phpを読み込んでください  -->
-<?php require_once('data.php')?>
+<?php require_once('data.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -14,9 +13,14 @@
     <h1 class="logo">Café Progate</h1>
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
-        <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+        <div class="menu-item">
+          <!-- <img>タグのsrc属性に、$menuのimageプロパティを表示してください -->
+          <img src="<?php echo $menu->image ?>">
+          <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+          <!-- <p>タグの中に、$menuのpriceプロパティを表示してください -->
+          <p class="price">¥<?php echo $menu->price ?></p>
+        </div>
       <?php endforeach ?>
-      
     </div>
   </div>
 </body>
