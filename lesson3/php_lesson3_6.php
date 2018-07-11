@@ -8,7 +8,7 @@ class Menu {
     $this -> name = $name;
     
   }
-  
+  //1komenntoß
   public function hello() {
     echo '私は'.$this->name.'です';
   }
