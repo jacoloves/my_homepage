@@ -3,7 +3,7 @@ class Menu {
   public $name;
   
   // コンストラクタを定義してください
-  public function__construct(){
+  public function __construct() {
       echo '１つのメニューが作られました';
   }
   
