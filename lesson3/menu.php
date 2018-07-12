@@ -7,7 +7,7 @@ class Menu {
   public $image;
   
   // コンストラクタの引数に$price, $imageを追加してください
-  public function __construct($name) {
+  public function __construct($name, $price, $image) {
     $this->name = $name;
     // priceプロパティに引数の$priceを代入してください
     $this->price = $price;
