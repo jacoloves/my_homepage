@@ -14,11 +14,10 @@
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
         <div class="menu-item">
-          <!-- <img>タグのsrc属性に、$menuのimageプロパティを表示してください -->
-          <img src="<?php echo $menu->image ?>">
+          <img src="<?php echo $menu->image ?>" class="menu-item-image">
           <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
-          <!-- <p>タグの中に、$menuのpriceプロパティを表示してください -->
-          <p class="price">¥<?php echo $menu->price ?></p>
+          <!-- $menuのgetTaxIncludedPriceメソッドの戻り値を表示してください -->
+          <p class="price">¥<?php getTaxIncludePrice($menu->price) ?>（税込）</p>
         </div>
       <?php endforeach ?>
     </div>
