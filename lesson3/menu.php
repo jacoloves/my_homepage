@@ -15,7 +15,7 @@ class Menu {
   }
   
   // getTaxIncludedPriceメソッドを定義してください
-  function getTaxIncludedPrice(){
+  public function getTaxIncludedPrice(){
     return floor($this->price * 1.08);
   }
   
