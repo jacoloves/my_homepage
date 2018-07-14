@@ -17,7 +17,7 @@
           <img src="<?php echo $menu->image ?>" class="menu-item-image">
           <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
           <!-- $menuのgetTaxIncludedPriceメソッドの戻り値を表示してください -->
-          <p class="price">¥<?php echo $menu->getTaxIncludePrice() ?>（税込）</p>
+          <p class="price">¥<?php echo $menu->getTaxIncludePrice($menu->price) ?>（税込）</p>
         </div>
       <?php endforeach ?>
     </div>
