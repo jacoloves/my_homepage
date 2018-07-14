@@ -16,7 +16,7 @@ class Menu {
   
   // getTaxIncludedPriceメソッドを定義してください
   public function getTaxIncludedPrice(){
-    return $this->price;
+    return $this->price * 3;
   }
   
 }
